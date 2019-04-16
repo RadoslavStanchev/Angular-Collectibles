@@ -1,0 +1,24 @@
+<div class="d-flex justify-content-center align-items-center container ">
+  <div class="row">
+    <div class="col-md-12 col-md-offset-1">
+      <form #form="ngForm" (ngSubmit)="login(form)">
+          <fieldset>
+              <legend>Login</legend>
+              <div class="form-group">
+                  <label for="email">Login with Email address</label>
+                  <input required type="email" class="form-control" id="email" name="email" ngModel aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                  <label for="password">Password</label>
+                  <input requried type="password" class="form-control" id="password" name="password" ngModel placeholder="Password">
+              </div>
+              <button type="submit" [disabled]="form.invalid" class="btn btn-primary">Submit</button>
+              <a class="btn btn-block btn-social btn-google" (click)="userService.signInWithGmail()">
+                <span class="fab fa-google"></span> Sign in with Google
+              </a>
+          </fieldset>
+      </form>
+    </div>
+  </div>
+  </div>

@@ -23,7 +23,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/bootstrap.css",
+              "node_modules/ngx-toastr/toastr.css",
+              "node_modules/bootstrap-social/bootstrap-social.css"
             ],
             "scripts": [],
             "es5BrowserSupport": true
